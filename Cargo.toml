@@ -1,7 +1,7 @@
 [package]
 name = "hanli"
 version = "0.1.0"
-authors = ["史成成 <shichengcheng-it@bestpay.com.cn>"]
+authors = ["AlvitrTavenclaw <943459049@qq.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
