@@ -1,1 +1,1 @@
-pub mod remove_duplicates;
+pub mod leetcode_26;
