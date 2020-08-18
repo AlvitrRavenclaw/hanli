@@ -1,3 +1,4 @@
+pub mod leetcode_1;
 pub mod leetcode_26;
 pub mod leetcode_66;
 pub mod leetcode_122;
