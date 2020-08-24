@@ -10,14 +10,12 @@ impl Solution {
         }
         let chars: Vec<char> = s.chars().collect();
         
-        let mut start = 0;
         if !chars[0].is_ascii_digit() && chars[0] != '+' && chars[0] != '-' {
             return 0
-        } else {
-            start = if chars[0].is_ascii_digit() {0} else {1};
         }
         
         let mut ret: u64 = 0; 
+        let start = if chars[0].is_ascii_digit() {0} else {1};
         for i in start..chars.len() {
             if !chars[i].is_ascii_digit() || ret > 2147483647 {
                 break;
