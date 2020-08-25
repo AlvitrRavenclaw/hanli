@@ -4,9 +4,9 @@ struct Solution;
 impl Solution {
     #[allow(dead_code)]
     pub fn count_and_say(n: i32) -> String {
+        let mut tmp = String::new();
         let mut ret: String = "1".to_string();
         for _ in 1..n {
-            let mut tmp = String::new();
             let mut cur: char = ' ';
             let mut cnt: u8 = 0;
             for ch in ret.chars() {
@@ -23,7 +23,8 @@ impl Solution {
             }
             tmp.push_str(&cnt.to_string());
             tmp.push(cur);
-            ret = tmp;
+            ret = tmp.clone();
+            tmp.clear();
         }
         return ret;
     }
