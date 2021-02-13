@@ -1,5 +1,6 @@
 mod array;
 mod string;
+mod breakout;
 
 #[cfg(test)]
 mod tests {
